@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="mobiliario" type="tipoMobiliario"/>
+  
+  <xs:complexType name="tipoMobiliario">
+  	<xs:sequence>
+  		<xs:element name="fuentes" type="tipoFuentes"/>
+  		<xs:element name="farola" type="tipoFarola" maxOccurs="unbounded"/>
+  		<xs:element name="bancos" type="tipoBancos"/>
+  		<xs:element name="senal" type="tipoSenal" maxOccurs="unbounded"/>
+  		<xs:element name="papelera" type="tipoPapelera" maxOccurs="unbounded"/>
+  		<xs:element name="jardin" type="tipoJardinDerivado" maxOccurs="unbounded"/>
+  	</xs:sequence>
+  </xs:complexType>
+  
+  
+  
+  <xs:complexType name="tipoJardin">
+  	<xs:all>
+  		<xs:element name="extension" type="xs:string"/>
+  		<xs:element name="arboleda" type="xs:string"/>
+  	</xs:all>
+  </xs:complexType>
+  
+  
+  
+  <xs:complexType name="tipoJardinDerivado">
+    <xs:complexContent>
+      <xs:extension base="tipoJardin">
+        <xs:attribute name="localizacion" type="xs:string"/>
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+  
+  
+  <xs:complexType name="tipoPapelera">
+  	<xs:attribute name="dimension" type="dimensiones"/>
+  </xs:complexType>
+  
+  
+  <xs:simpleType name="dimension0-1000">
+  	<xs:restriction base="xs:integer">
+  		<xs:minInclusive value="1"/>
+  		<xs:maxInclusive value="1000"/>
+  	</xs:restriction>
+  </xs:simpleType>
+  
+  <xs:simpleType name="dimension0-150">
+  	<xs:restriction base="dimension0-1000">
+  		<xs:maxInclusive value="150"/>
+  	</xs:restriction>
+  </xs:simpleType>
+  
+  
+  <xs:simpleType name="dimensionDescrita">
+  	<xs:restriction base="xs:string">
+  		<xs:enumeration value="M"/>
+  		<xs:enumeration value="L"/>
+  		<xs:enumeration value="XL"/>
+  	</xs:restriction>
+  </xs:simpleType>
+  
+  
+  <xs:simpleType name="dimension">
+  	<xs:union memberTypes="dimension0-150 dimensionDescrita"/>
+  </xs:simpleType>
+  
+  
+  <xs:simpleType name="dimensiones">
+  	<xs:list itemType="dimension"/>
+  </xs:simpleType>
+  
+  
+  <xs:complexType name="tipoSenal">
+  	<xs:attribute name="cocheMultado">
+  		<xs:simpleType>
+  			<xs:restriction base="xs:string">
+  				<xs:pattern value="[0-9]{4}[A-Z]{3}"/>
+  			</xs:restriction>
+  		</xs:simpleType>
+  	</xs:attribute>
+  </xs:complexType>
+  
+  
+  
+  <xs:complexType name="tipoBancos">
+  	<xs:choice>
+  		<xs:element name="banco">
+  			<xs:complexType>
+  				<xs:attribute name="material">
+  					<xs:simpleType>
+  						<xs:restriction base="xs:string">
+  							<xs:enumeration value="piedra"/>
+  							<xs:enumeration value="madera"/>
+  							<xs:enumeration value="metal"/>
+  						</xs:restriction>
+  					</xs:simpleType>
+  				</xs:attribute>
+  			</xs:complexType>
+  		</xs:element>
+  		<xs:element name="macetero">
+  			<xs:complexType>
+  				<xs:attribute name="personasSentadas">
+  					<xs:simpleType>
+  						<xs:restriction base="xs:integer">
+  							<xs:minInclusive value="0"/>
+  							<xs:maxInclusive value="100"/>
+  						</xs:restriction>
+  					</xs:simpleType>
+  				</xs:attribute>
+  			</xs:complexType>
+  		</xs:element>
+  	</xs:choice>
+  </xs:complexType>
+  
+  
+  <xs:complexType name="tipoFarola">
+      <xs:simpleContent>
+        <xs:extension base="xs:integer">
+          <xs:attribute name="nombre" type="xs:string" />
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  
+  
+  <xs:complexType name="tipoFuentes" mixed="true">
+  	<xs:sequence>
+  		<xs:element name="fuente" type="tipoFuente" maxOccurs="unbounded"/>
+  	</xs:sequence>
+  	<xs:attribute name="ciudad" type="xs:string"/>
+  </xs:complexType>
+
+
+
+  <xs:complexType name="tipoFuente">
+	<xs:attribute name="nombre" type="xs:string"/>
+	<xs:attribute name="litroPorSegundo" type="xs:integer"/>
+  </xs:complexType>
+
+</xs:schema>

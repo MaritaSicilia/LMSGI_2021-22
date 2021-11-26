@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<mobiliario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="mobiliarioUrbano.xsd">
+	<fuentes ciudad="Málaga">Hay un monton en mi pueblo
+		<fuente nombre="Fuente de El Coso" litroPorSegundo="3"/>
+	</fuentes>
+ 	<farola nombre="De la curva">25</farola>
+	<bancos>
+		<!-- <banco material="madera"/> --> <!-- Como es choice, o uno u otro -->
+		<macetero personasSentadas="5"/>
+	</bancos>
+ 	<senal cocheMultado="1234ABC"/>
+	<papelera dimension="XL 5 120 10 L"/>
+ 	<jardin localizacion="Al ladito de la estatua">
+ 		<extension>1200m2</extension>
+ 		<arboleda>Pinos y sauces</arboleda>
+ 	</jardin>
+</mobiliario>

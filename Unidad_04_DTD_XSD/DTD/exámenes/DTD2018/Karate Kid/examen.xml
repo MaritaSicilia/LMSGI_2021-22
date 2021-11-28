@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pelicula SYSTEM "examen.dtd">
+<pelicula>
+	Karate Kid
+	<personaje nombre="Alice" relacionCon="Daniel Johnny" />
+	<personaje nombre="Daniel" enemigo="Johnny" />
+	<personaje nombre="Johnny" enemigo="Daniel" />
+	<personaje nombre="Miyagi" rol="sensei" />
+	<parte>
+		<nombre>I</nombre>
+		<escenario nombre="California" />
+		<puntuacion>
+			<valoracion>Una web que le da un 9</valoracion>
+			<valoracion>Una web que le da un 10</valoracion>
+		</puntuacion>
+	</parte>
+	<parte>
+		<nombre>II - &okinawa;</nombre>
+		<pais nombre="Japon" />
+		<puntuacion>
+			<valoracion>Una web que le da un 9</valoracion>
+			<valoracion>Una web que le da un 10</valoracion>
+		</puntuacion>
+	</parte>
+</pelicula>

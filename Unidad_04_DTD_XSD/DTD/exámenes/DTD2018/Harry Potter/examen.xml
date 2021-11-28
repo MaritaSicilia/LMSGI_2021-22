@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE harryPotter SYSTEM "examen.dtd">
+<harryPotter edad="infantil">&harry;
+	<casa nombre="Griffyndor">
+		<personaje nombre="Ron" edad="infantil" estado="vivo" antagonista="Malfoy"/>
+		<personaje nombre="Hermione" edad="infantil" estado="vivo"/>
+		<personaje nombre="Malfoy" edad="infantil" estado="vivo"/>
+	</casa>
+	<pelicula personajes="Ron Hermione">
+		<titulo>La piedra filosofal</titulo>
+		<secuela>La cámara secreta</secuela>
+	</pelicula>
+</harryPotter>

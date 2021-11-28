@@ -1,0 +1,14 @@
+<!ELEMENT zodiaco (#PCDATA | signo | caballero)*>
+<!ELEMENT signo EMPTY>
+<!ELEMENT caballero (armadura?, fechaNacimiento, (batallaEpica | peleilla)+)>
+<!ELEMENT armadura (#PCDATA)>
+<!ELEMENT fechaNacimiento (#PCDATA)>
+<!ELEMENT batallaEpica (#PCDATA)>
+<!ELEMENT peleilla (#PCDATA)>
+<!ENTITY % caracteristicasComunes "nombre ID #REQUIRED">
+<!ATTLIST signo elemento (agua | aire | fuego | tierra) "agua"
+                %caracteristicasComunes;
+                signoAfin IDREF #IMPLIED
+                signosAmigos IDREFS #IMPLIED
+                creo CDATA #FIXED "no">  
+<!ATTLIST caballero %caracteristicasComunes;>

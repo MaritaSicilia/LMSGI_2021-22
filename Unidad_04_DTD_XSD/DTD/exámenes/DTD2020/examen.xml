@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE zodiaco SYSTEM "examen.dtd">
+<zodiaco> Esta es la predicción de los signos del zodiaco
+	<signo nombre="aries" elemento="agua" signoAfin="acuario" signosAmigos="piscis acuario" creo="no"></signo>
+	<signo nombre="acuario" signoAfin="acuario" signosAmigos="piscis acuario"></signo>
+	<signo nombre="leo" signoAfin="acuario" signosAmigos="piscis acuario"></signo>
+	<signo nombre="libra" signoAfin="acuario" signosAmigos="piscis acuario"></signo>
+	<signo nombre="piscis" signoAfin="acuario" signosAmigos="piscis acuario"></signo>
+	<caballero nombre="Seiya">
+		<armadura>Plata</armadura>
+		<fechaNacimiento>asdf</fechaNacimiento>
+		<batallaEpica>asdfa</batallaEpica>
+	</caballero>
+</zodiaco>

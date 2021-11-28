@@ -1,0 +1,16 @@
+<!ELEMENT pelicula (#PCDATA | personaje | parte)*>
+<!ENTITY % atributoNombre "nombre (California | Tokio | Japon) 'California'">
+<!ELEMENT personaje EMPTY>
+<!ATTLIST personaje nombre ID #REQUIRED 
+                    enemigo IDREF #IMPLIED
+                    relacionCon IDREFS #IMPLIED
+                    rol CDATA #FIXED "sensei">
+<!ELEMENT parte (nombre, (escenario | pais), puntuacion?)>
+<!ELEMENT nombre (#PCDATA)>
+<!ELEMENT puntuacion (valoracion+)>
+<!ELEMENT valoracion (#PCDATA)>
+<!ELEMENT escenario EMPTY>
+<!ATTLIST escenario %atributoNombre;>
+<!ELEMENT pais EMPTY>
+<!ATTLIST pais %atributoNombre;>
+<!ENTITY okinawa "Un lugar precioso">

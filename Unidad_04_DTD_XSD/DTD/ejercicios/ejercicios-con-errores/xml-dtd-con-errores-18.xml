@@ -1,10 +1,11 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mensajes [
-  <!ELEMENT mensajes (mensaje)>
+  <!ELEMENT mensajes (mensaje*)>
+  <!ELEMENT mensaje (de, para, hora, texto)>
   <!ELEMENT de (#PCDATA)>
   <!ELEMENT para (#PCDATA)>
   <!ELEMENT hora (#PCDATA)>
-  <!ELEMENT texto (#PCDATA)>
+  <!ELEMENT texto (#PCDATA | strong)*>
   <!ELEMENT strong (#PCDATA)>
 ]>
 
@@ -19,6 +20,6 @@
     <de>Juan (juan@example.com)</de>
     <para>Pepe (pepe@example.com)</para>
     <hora>28/02/2011 17:54:20,87</hora>
-    <texto>Aquí, aprendiendo <strong>XML</strong></texto>
+    <texto>Aquí, aprendiendo <strong>XML</strong> y esto de regalo</texto>
   </mensaje>
 </mensajes>

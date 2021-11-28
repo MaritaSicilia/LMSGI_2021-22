@@ -1,0 +1,3 @@
+<!ELEMENT concesionario (modeloCoche, modeloMotor)>
+<!ELEMENT modeloCoche (#PCDATA)>
+<!ELEMENT modeloMotor (#PCDATA)>

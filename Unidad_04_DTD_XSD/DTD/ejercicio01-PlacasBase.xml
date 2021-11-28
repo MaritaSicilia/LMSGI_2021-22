@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE placasBase [
+  <!ELEMENT placasBase (micro+-, memoria+, modelo, fabricante)>
+  <!ELEMENT micro (#PCDATA)>
+  <!ELEMENT memoria (#PCDATA)>
+  <!ELEMENT modelo (#PCDATA)>
+  <!ELEMENT fabricante (Intel | Asus)>
+  <!ELEMENT Intel EMPTY>
+  <!ELEMENT Asus EMPTY>
+]>
+<placasBase>
+    <micro>i7-9700k</micro>
+    <memoria>64GB</memoria>
+    <modelo>Asus PrimeZ 390-A</modelo>
+    <fabricante><Intel /></fabricante>
+</placasBase>

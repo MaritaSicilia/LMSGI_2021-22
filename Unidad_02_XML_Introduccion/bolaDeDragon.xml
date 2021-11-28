@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dragonBall>
+    <personaje nombre="Goku">
+        <evolucion>Super guerrero</evolucion>
+        <evolucion>Super guerrero 2</evolucion>
+        <evolucion>Super guerrero Dios</evolucion>
+        <evolucion>Super guerrero &lt; Blue</evolucion>
+        <amigo nombre="Krilin"/>
+    </personaje>
+    <!--
+asdfasdf
+asdfasdf
+sadfasdf
+     -->
+    <personaje nombre="Freezer">
+        <evolucion>Primera forma</evolucion>
+        <evolucion>Freezer Gold</evolucion>
+    </personaje>
+
+</dragonBall>

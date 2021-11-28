@@ -1,0 +1,16 @@
+<!ELEMENT harryPotter (#PCDATA | casa | pelicula)*>
+<!ELEMENT pelicula (titulo, (secuela | precuela))>
+<!ELEMENT titulo (#PCDATA)>
+<!ELEMENT secuela (#PCDATA)>
+<!ELEMENT precuela (#PCDATA)>
+<!ATTLIST pelicula personajes IDREFS #REQUIRED>
+<!ENTITY harry "Me encanta Harry Potter">
+<!ENTITY % atributoEdad "edad (infantil | adolescente | adulto) 'infantil'">
+<!ATTLIST harryPotter %atributoEdad;>
+<!ELEMENT casa (personaje+)>
+<!ATTLIST casa nombre ID #IMPLIED>
+<!ELEMENT personaje EMPTY>
+<!ATTLIST personaje nombre ID #REQUIRED 
+                    %atributoEdad;
+                    estado (muerto | vivo) #FIXED "vivo"
+                    antagonista IDREF #IMPLIED> 

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Marvel - Los vengadores</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css">
+		body {
+			margin: 50px;
+			padding: 0px;
+			background: #2372DE;
+			font-family: 'Open Sans', sans-serif;
+			font-size: 11pt;
+			color: #FFFFFF;
+			/*text-align:center;*/
+		}
+
+		h1 {
+			color: #FFFF99;
+		}
+
+		a {
+			color: #FFFFFF;
+			/* Blanco */
+		}
+
+		a:hover {
+			color: #FFFFFF;
+			font-weight: bold;
+			text-decoration: none;
+		}
+
+		#menu li {
+			width: 200px;
+			display: inline-block;
+			background: #FFFF99;
+			color: #000000;
+			text-decoration: none;
+		}
+		#menu li:hover {
+			background: rgb(124, 245, 134);
+			color: #000000;
+		}
+
+		#menu {
+			position:fixed;
+			top: 0px;
+			z-index: 999;
+		}
+	</style>
+</head>
+
+<body>
+	<div  id="menu">
+		<ul>
+			<li><a href="https://www.google.es">Principal</a></li>
+			<li>Noticias</li>
+			<li>Contacto</li>
+		</ul>
+		</div>
+	<h1>Superhéroes de Marvel - Los vengadores</h1>
+
+
+	<form id="form1" name="form1" method="post" action="/ServletEjemploFormularios">
+		<p>
+			<label for="Nombre">Nombre:</label>
+			<input type="text" name="Nombre" id="Nombre" />
+		</p>
+		<p>
+			<label for="Apellidos">Apellidos:</label>
+			<input type="text" name="Apellidos" id="Apellidos" />
+		</p>
+		<p>
+			<label for="Descripcion">Descripción: </label>
+			<textarea name="Descripcion" id="Descripcion" cols="45" rows="5"></textarea>
+		</p>
+		<p>
+			<input type="submit" name="Enviar" id="Enviar" value="Enviar el formulario" />
+		</p>
+	</form>
+	<p>&nbsp;</p>
+</body>
+
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Marvel - Los vengadores</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css">
+		body {
+			font-family:Lucida Grande, Lucida Sans Unicode, Verdana, Arial, Helvetica, sans-serif;
+			font-size:12px;
+		}
+		p, h1, form, button {
+			border:0; margin:0; padding:0;
+		}
+		
+		.spacer {
+			clear:both; 
+			height:1px;
+		}
+		
+		.myform{
+			margin:0 auto;
+			width:400px;
+			padding:14px;
+		}
+		
+		#stylized{
+			border:solid 2px #b7ddf2;
+			background:#ebf4fb;
+		}
+		#stylized h1 {
+			font-size:14px;
+			font-weight:bold;
+			margin-bottom:8px;
+		}
+		#stylized p{
+			font-size:11px;
+			color:#666666;
+			margin-bottom:20px;
+			border-bottom:solid 1px #b7ddf2;
+			padding-bottom:10px;
+		}
+		#stylized label{
+			display:block;
+			font-weight:bold;
+			text-align:right;
+			width:140px;
+			float:left;
+		}
+		#stylized .small{
+			color:#666666;
+			display:block;
+			font-size:11px;
+			font-weight:normal;
+			text-align:right;
+			width:140px;
+		}
+		#stylized .smallUnlimited{
+			color:#666666;
+			display:block;
+			font-size:11px;
+			font-weight:normal;
+			text-align:left;
+			/*width:140px;*/
+		}
+		.campoNormal{
+			float:left;
+			font-size:12px;
+			padding:4px 2px;
+			/*border:solid 1px #aacfe4;*/
+			width:200px;
+			margin:2px 0 20px 10px;
+		}
+		.campoNormal:focus {
+			border:solid 1px #FF0000; /* rojo */
+		}
+		.campoNormal:active {
+			background: #0C9; /* verde */
+		}
+		.campoNormal:hover {
+			border:solid 1px #0000FF; /* azul */
+		}
+		.campoMenor{
+			float: left;
+			font-size: 12px;
+			padding: 4px 2px;
+			text-align: left;
+			margin: 2px 150px 20px 7px;
+		}
+		.campoMenorSinEspacioInferior{
+	float: left;
+	font-size: 12px;
+	padding: 4px 2px;
+	text-align: left;
+	margin: 2px 150px 0px 7px;
+		}
+		.campoFicticio{
+	float: left;
+	font-size: 10px;
+	padding: 0px;
+	text-align: left;
+	margin: 2px 150px 0px 7px;
+		}
+		.boton{
+			clear:both;
+			margin-left:150px;
+			width:125px;
+			height:31px;
+			background:#666666 url(img/button.png) no-repeat;
+			text-align:center;
+			line-height:31px;
+			color:#FFFFFF;
+			font-size:11px;
+			font-weight:bold;
+		}	
+	</style>
+</head>
+<body>
+<div id="stylized" class="myform">
+	<h1>Superhéroes de Marvel</h1>
+    <span class="smallUnlimited">Rellena el formulario para ser un superhéroe</span>
+    <p/>
+<form id="form1" name="form1" method="post" action="/ServletEjemploFormularios">
+  
+    <label>Nombre:<span class="small">Tu nombre</span></label>
+    <input type="text" name="Nombre" id="Nombre" class="campoNormal"/>
+
+  
+    <label for="Apellidos">Apellidos:<span class="small">Tus apellidos</span></label>
+    <input type="text" name="Apellidos" id="Apellidos"  class="campoNormal" />
+
+  
+    <label for="Descripcion">Descripción:<span class="small">Como eres</span></label>
+    <textarea name="Descripcion" id="Descripcion" rows="5"  class="campoNormal"></textarea>
+ 
+  
+    <label for="checkbox">Estudias<span class="small">¿Eres estudiante?</span></label>
+    <input type="checkbox" name="checkbox" id="checkbox" class="campoMenor"/>
+
+  
+    <label>Sexo</label><span class="campoFicticio">&nbsp;</span>
+    <label><span class="small">Hombre</span></label>
+    <input type="radio" name="Sexo" value="1" id="Sexo_0" class="campoMenorSinEspacioInferior"/>
+      
+
+    <label><span class="small">Mujer</span></label>
+    <input type="radio" name="Sexo" value="2" id="Sexo_1" class="campoMenor"/>
+      
+  
+    <label for="select">Edad<span class="small">¿Qué edad tienes?</span></label>
+    <select name="select" id="select" class="campoNormal">
+      <option value="1">0-15</option>
+      <option value="2">16-30</option>
+      <option value="3">31-45</option>
+      <option value="4">46-60</option>
+      <option value="5">61-75</option>
+      <option value="6">76-90</option>
+      <option value="7">91-105</option>
+      <option value="8">106-1000</option>
+    </select>
+
+  
+    <label for="select2">Peso<span class="small">¿Cuánto pesas?</span></label>
+    <select name="select2" size="5" id="select2" class="campoNormal">
+      <option value="1">0-20</option>
+      <option value="2">21-40</option>
+      <option value="3">41-60</option>
+      <option value="4">61-80</option>
+      <option value="5">81-100</option>
+      <option value="6">101-130</option>
+      <option value="7">131-1000</option>
+    </select>
+
+  
+    <input name="oculto" type="hidden" id="oculto" value="valorOculto" />
+
+  
+    <input type="submit" name="Enviar" id="Enviar" value="Enviar el formulario" class="boton"/>
+  
+</form>
+<p><a href="http://www.google.es" class="campoNormal">Enlace a Google</a></p>
+</div>
+</body> 
+</html>

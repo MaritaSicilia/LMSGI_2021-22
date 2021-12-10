@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Marvel - Los vengadores</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<style type="text/css">
+		body {
+			margin: 50px;
+			padding: 0px;
+			background: #2372DE;
+			font-family: 'Open Sans', sans-serif;
+			font-size: 11pt;
+			color: #FFFFFF;
+			/*text-align:center;*/
+		}
+		h1 {
+			color: #FFFF99;
+		}
+		a {
+			color: #FFFFFF;  /* Blanco */
+		}
+		a:hover {
+			color: #FFFFFF;  
+			font-weight: bold;
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body>
+	<h1>Superhéroes de Marvel - Los vengadores</h1>
+<form id="form1" name="form1" method="post" action="/ServletEjemploFormularios">
+  <p>
+    <label for="Nombre">Nombre:</label>
+    <input type="text" name="Nombre" id="Nombre" />
+  </p>
+  <p>
+    <label for="Apellidos">Apellidos:</label>
+    <input type="text" name="Apellidos" id="Apellidos" />
+  </p>
+  <p>
+    <label for="Descripcion">Descripción: </label>
+    <textarea name="Descripcion" id="Descripcion" cols="45" rows="5"></textarea>
+  </p>
+  <p>
+    <input type="checkbox" name="checkbox" id="checkbox" />
+    <label for="checkbox">¿Eres estudiante?</label>
+  </p>
+  <p>
+    <label>
+      <input type="radio" name="Sexo" value="1" id="Sexo_0" />
+      Hombre</label>
+    <br />
+    <label>
+      <input type="radio" name="Sexo" value="2" id="Sexo_1" />
+      Mujer</label>
+  </p>
+  <p>
+    <label for="select">Edad</label>
+    <select name="select" id="select">
+      <option value="1">0-15</option>
+      <option value="2">16-30</option>
+      <option value="3">31-45</option>
+      <option value="4">46-60</option>
+      <option value="5">61-75</option>
+      <option value="6">76-90</option>
+      <option value="7">91-105</option>
+      <option value="8">106-1000</option>
+    </select>
+  </p>
+  <p>
+    <label for="select2">Peso</label>
+    <select name="select2" size="5" id="select2">
+      <option value="1">0-20</option>
+      <option value="2">21-40</option>
+      <option value="3">41-60</option>
+      <option value="4">61-80</option>
+      <option value="5">81-100</option>
+      <option value="6">101-130</option>
+      <option value="7">131-1000</option>
+    </select>
+  </p>
+  <p>
+    <input name="oculto" type="hidden" id="oculto" value="valorOculto" />
+    <br />
+  </p>
+  <p>
+    <input type="submit" name="Enviar" id="Enviar" value="Enviar el formulario" />
+  </p>
+</form>
+<p>&nbsp;</p></body> 
+</html>

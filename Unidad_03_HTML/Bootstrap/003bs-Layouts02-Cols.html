@@ -1,0 +1,147 @@
+<!-- Material obtenido de https://getbootstrap.com/docs/4.4/layout/grid/ -->
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Ejemplos de diferentes tipos de columnas</title>
+
+    <style type="text/css">
+        .row div {
+            padding-top: .75rem;
+            padding-bottom: .75rem;
+            background-color: rgba(86, 61, 124, .15);
+            border: 1px solid rgba(86, 61, 124, .2);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="divCentrado">
+        <h1>Ejemplos de columnas</h1>
+        <div class="container-fluid margenSuperior">
+            <h3>Tres columnas iguales siempre</h3>
+            <p class="textoDeAclaracion">Se reparte el espacio entre tres.</p>
+            <div class="row">
+                <div class="col-4 ejemloColumna">
+                    Una de tres columnas
+                </div>
+                <div class="col-4 ejemloColumna">
+                    Una de tres columnas
+                </div>
+                <div class="col-4 ejemloColumna">
+                    Una de tres columnas
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid margenSuperior">
+            <h3>Tres columnas iguales desde tamaño SM</h3>
+            <p class="textoDeAclaracion">Se reparte el espacio entre tres. Cuando el ancho es menor de SM cada columna
+                ocupa el 100%</p>
+            <div class="row">
+                <div class="col-sm ejemloColumna">
+                    Una de tres columnas - col-sm
+                </div>
+                <div class="col-sm ejemloColumna">
+                    Una de tres columnas - col-sm
+                </div>
+                <div class="col-sm ejemloColumna">
+                    Una de tres columnas - col-sm
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid margenSuperior">
+            <h3>Columnas iguales con un salto entre ellas.</h3>
+            <p class="textoDeAclaracion">Se reparte el espacio entre entre aquellas antes y después del div con clase
+                "w-100"</p>
+            <div class="row">
+                <div class="col ejemloColumna">col</div>
+                <div class="col ejemloColumna">col</div>
+                <div class="w-100"></div>
+                <div class="col ejemloColumna">col</div>
+                <div class="col ejemloColumna">col</div>
+            </div>
+        </div>
+        <div class="container-fluid margenSuperior">
+            <h3>Columnas con tamaños relativos a las 12 columnas de Flex</h3>
+            <p class="textoDeAclaracion">Se reparte el espacio de forma proporcional a las 12 columnas de Flex</p>
+            <div class="row">
+                <div class="col ejemloColumna">col</div>
+                <div class="col-5 ejemloColumna">col-5</div>
+                <div class="col ejemloColumna">col</div>
+            </div>
+            <div class="row">
+                <div class="col-8 ejemloColumna">col-8</div>
+                <div class="col-2 ejemloColumna">col-2</div>
+                <div class="col ejemloColumna">col</div>
+                <div class="col ejemloColumna">col</div>
+            </div>
+        </div>
+
+        <div class="container-fluid margenSuperior">
+            <h3>Columnas con anchos relativos a su contenido</h3>
+            <p class="textoDeAclaracion">Si Las columnas marcadas con clase "col-{breakpoint}-auto" ajustan su ancho a
+                su
+                contenido</p>
+            <div class="row justify-content-md-center">
+                <div class="col col-lg-2">
+                    1 of 3
+                </div>
+                <div class="col-md-auto">
+                    Ancho variable respecto al contenido
+                </div>
+                <div class="col col-lg-2">
+                    3 of 3
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    1 of 3
+                </div>
+                <div class="col-md-auto">
+                    Ancho variable respecto al contenido
+                </div>
+                <div class="col col-lg-2">
+                    3 of 3
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid margenSuperior">
+            <h3>De apilados a horizontal</h3>
+            <p class="textoDeAclaracion">Ejemplo simple de divs apilados por debajo del tamaño SM pero en horizontal en
+                otros casos</p>
+            <div class="row">
+                <div class="col-sm-8">col-sm-8</div>
+                <div class="col-sm-4">col-sm-4</div>
+            </div>
+            <div class="row">
+                <div class="col-sm">col-sm</div>
+                <div class="col-sm">col-sm</div>
+                <div class="col-sm">col-sm</div>
+            </div>
+        </div>
+    
+        <h2 class="margenSuperior">Puedes seguir viendo lo relativo a layouts, con muchas más opciones en<br/>
+            <a href="https://getbootstrap.com/docs/4.4/layout/grid/#mix-and-match">https://getbootstrap.com/docs/4.4/layout/grid/#mix-and-match</a></h2>
+        </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+
+body {
+    text-align: justify;
+    margin: 0 auto;
+}
+
+.divCentrado {
+    width: 98%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.textoDeAclaracion {
+    font-weight: bold;
+}
+
+.margenSuperior {
+    margin-top: 2em;
+}
+
+.ejemloColumna {
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+    background-color: rgba(86,61,124,.15);
+    border: 1px solid rgba(86,61,124,.2);
+}

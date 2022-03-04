@@ -1,0 +1,49 @@
+<!-- Material obtenido de https://getbootstrap.com/docs/4.4/getting-started/introduction/ -->
+<!-- La línea siguiente indica que vamos a usar HTML 5 -->
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <!-- La propiedad width controla el tamaño del viewport. Puede definirse con un número en pixeles como  
+        width=600 o con un valor especial device-width que es el equivalente al ancho de la pantalla en píxeles 
+        CSS en una escala de 100%. (Existen valores correspondientes de height y device-height, los cuales 
+        pueden ser útiles para páginas con elementos que cambian tamaño o posición basadas en la altura del 
+        viewport (height). El atributo shrink-to-fit="no" configura este mismo comportamiento para los navegadores 
+        Safari anteriores a la versión 9.
+    
+        La propiedad initial-scale controla el nivel de zoom cuando la página se carga por primera vez. 
+        Las propiedades maximum-scale, minimum-scale, y user-scalable controlan la forma en cómo se permite a 
+        los usuarios aumentar o disminiuir el zoom en la página
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS - Completamente necesario para que Bootstrap funcione -->
+    <!-- Cuando necesitamos minimizar el espacio ocupado por nuestras hojas de estilos .css o de nuestros scripts .js, 
+        la opción más frecuente consiste en la eliminación de los caracteres superfluos como los saltos de línea, 
+        retornos de carro, tabuladores y la repetición de más de 2 espacios en blanco.
+
+        Si examinamos el contenido de la mayoría de páginas web, no es raro observar que muchos de los archivos 
+        javascript que cargan tienen como doble extensión 'archivo.min.js' o que las hojas de estilos también terminan 
+        con la doble extensión 'archivo.min.css'. Esta característica nos está informando que el contenido de estos 
+        archivos, ha sido optimizado para que sólo contenga el código que interesa sin utilizar caracteres que no tengan 
+        significado sintáctico, como los retornos de carro, tabuladores, etc. 
+    -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Hola, Mundo!</title>
+  </head>
+  <body>
+    <h1>Hola, Mundo!</h1>
+    <div class="container-md" style="background-color: aqua;">Hola</div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- Bootstrap usa JQuery, Poppers y unas librerías JavaScript específicas. Debes incluirlas en ese orden y siempre justo 
+        antes del fin de la etiqueta <body>
+    -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>

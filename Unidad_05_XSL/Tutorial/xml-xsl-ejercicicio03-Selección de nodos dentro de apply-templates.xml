@@ -1,0 +1,982 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="xml-xsl-ejercicicio03.xsl"?>
+
+<marvel>
+  <superheroe>
+    <nombre>Thor</nombre>
+    <poderes>Martillo mágico, Dios, Fuerza</poderes>
+    <amigos>Iron Man y Hulk</amigos>
+  </superheroe>
+  <superheroe>
+    <nombre>Hulk</nombre>
+    <poderes>Superfuerza, indestructible</poderes>
+    <amigos>Iron Man y Thor</amigos>
+  </superheroe>
+  <superheroe>
+    <nombre>Iron Man</nombre>
+    <poderes>Armadura, intelecto superior</poderes>
+    <amigos>Hulk y Thor</amigos>
+  </superheroe>
+  <supervillano>
+    <nombre>Doctor Muerte</nombre>
+    <poderes>Armadura, intelecto superior</poderes>
+    <amigos>No tiene</amigos>
+  </supervillano>
+</marvel>
+
+{
+  "Hotels": [
+    {
+      "hotel_code": "DSFH",
+      "eligibility": true,
+      "hotel_name": "Disney’s Hotel Santa Fe",
+      "hotel_rating": "2KEY",
+      "hotel_category": "PWebDisneyTier",
+      "check_in_dates": [
+        {
+          "check_in_start_date": "20200216",
+          "check_in_end_date": "20210930",
+          "check_in_day_of_week": "MTWRFSU",
+          "min_los": 1,
+          "max_los": 14
+        }
+      ],
+      "btl_before_switch": 1,
+      "btl_switch_hour": "12",
+      "btl_after_switch": 2,
+      "max_party_mix": 6,
+      "max_infants": 2,
+      "min_los": 1,
+      "max_los": 14,
+      "special_request": [
+        {
+          "request_code": "AR",
+          "request_description": "Habitaciones contiguas"
+        },
+        {
+          "request_code": "CB",
+          "request_description": "Cuna "
+        },
+        {
+          "request_code": "CR",
+          "request_description": "Habitaciones comunicantes "
+        },
+        {
+          "request_code": "FP",
+          "request_description": "Almohada de espuma "
+        },
+        {
+          "request_code": "LA",
+          "request_description": "Llegada tardía"
+        },
+        {
+          "request_code": "MR",
+          "request_description": "Petición de habitación comunicada"
+        },
+        {
+          "request_code": "QR",
+          "request_description": "Habitación tranquila  "
+        }
+      ],
+      "recommended_package": {
+        "room_package_code": "RSTDSF40MEGYH0H",
+        "package_description": "Incluye: 15% Descuento en Hotel Disney + Media Pensión Gratis + Entradas a los 2 Parques Disney",
+        "offer_type": "Standard",
+        "check_in_date": "20200818",
+        "check_out_date": "20200822",
+        "first_booking_validity_date": "20200130",
+        "last_booking_validity_date": "20200325",
+        "availability_for_stay_date": true,
+        "stay_length": 4,
+        "number_park_days": 5,
+        "offer_code": "0M",
+        "base_price_default_room": 229645,
+        "price_default_room": 233449,
+        "currency_code": "EUR",
+        "price_details": " + Habitación\r\n + Entradas a los Parques Disney\r\n + Desayuno, comidas o cenas\r\n + Acceso a todas las atracciones y espectáculos\r\n + Encuentros con Personajes Disney en tu Hotel y en los Parques\r\n + Extra Magic Time\r\n + Acceso a Parking (Hoteles y Parques)\r\n + Traslado en autobús gratuito a los Parques Disney\r\n + WiFi gratis en tu Hotel\r\n\r\nImportante:\r\n• La tarifa de gestión y los impuestos locales están incluidos en el precio mostrado. Por favor, consulta los Términos y Condiciones de la reserva.",
+        "rooms": [
+          {
+            "room_name": "CARS STANDARD MX6 ACC",
+            "room_type": "HTLD6TRH6",
+            "room_type_handle": "DSF_RSTDSF40M_HTLD6TRH6",
+            "room_type_category": "",
+            "base_room_price": 229645,
+            "room_price": 233449,
+            "delta_price": 0,
+            "eligible_sell_online": false,
+            "candidate_offer_identifier": 1
+          },
+          {
+            "room_name": "CARS STANDARD FACILITIES MX6 ACC",
+            "room_type": "HTLD6TEH6",
+            "room_type_handle": "DSF_RSTDSF40M_HTLD6TEH6",
+            "room_type_category": "",
+            "base_room_price": 236437,
+            "room_price": 240241,
+            "delta_price": 6792,
+            "eligible_sell_online": false,
+            "candidate_offer_identifier": 2
+          }
+        ],
+        "assumptive_add_ons": [
+          {
+            "addon_code": "TAXDSF4P0",
+            "addon_description": "Impuestos locales",
+            "addon_price": 904
+          },
+          {
+            "addon_code": "FEEBKG4P0",
+            "addon_description": "Gastos de gestión",
+            "addon_price": 2900
+          }
+        ]
+      }
+    },
+    {
+      "hotel_code": "DDLH",
+      "eligibility": true,
+      "hotel_name": "Disneyland Hotel",
+      "hotel_rating": "5KEY",
+      "hotel_category": "PWebDisneyTier",
+      "check_in_dates": [
+        {
+          "check_in_start_date": "20200216",
+          "check_in_end_date": "20210930",
+          "check_in_day_of_week": "MTWRFSU",
+          "min_los": 1,
+          "max_los": 14
+        }
+      ],
+      "btl_before_switch": 1,
+      "btl_switch_hour": "12",
+      "btl_after_switch": 2,
+      "max_party_mix": 5,
+      "max_infants": 1,
+      "min_los": 1,
+      "max_los": 14,
+      "special_request": [
+        {
+          "request_code": "AR",
+          "request_description": "Habitaciones contiguas"
+        },
+        {
+          "request_code": "CB",
+          "request_description": "Cuna "
+        },
+        {
+          "request_code": "CR",
+          "request_description": "Habitaciones comunicantes "
+        },
+        {
+          "request_code": "FP",
+          "request_description": "Almohada de espuma "
+        },
+        {
+          "request_code": "HF",
+          "request_description": "Planta alta"
+        },
+        {
+          "request_code": "LA",
+          "request_description": "Llegada tardía"
+        },
+        {
+          "request_code": "LF",
+          "request_description": "Planta baja "
+        },
+        {
+          "request_code": "MR",
+          "request_description": "Petición de habitación comunicada"
+        },
+        {
+          "request_code": "NL",
+          "request_description": "Cerca del ascensor "
+        },
+        {
+          "request_code": "QR",
+          "request_description": "Habitación tranquila  "
+        }
+      ],
+      "recommended_package": {
+        "room_package_code": "RSTDDL40OEGYH0H",
+        "package_description": "Incluye: 25% Descuento en Hotel Disney + Media Pensión Gratis + Entradas a los 2 Parques Disney",
+        "offer_type": "Alt1",
+        "check_in_date": "20200818",
+        "check_out_date": "20200822",
+        "first_booking_validity_date": "20191030",
+        "last_booking_validity_date": "20200325",
+        "availability_for_stay_date": true,
+        "stay_length": 4,
+        "number_park_days": 5,
+        "offer_code": "0O",
+        "base_price_default_room": 499635,
+        "price_default_room": 505535,
+        "currency_code": "EUR",
+        "price_details": " + Habitación\r\n + Entradas a los Parques Disney\r\n + Desayuno, comidas o cenas\r\n + Acceso a todas las atracciones y espectáculos\r\n + Encuentros con Personajes Disney en tu Hotel y en los Parques\r\n + Extra Magic Time\r\n + Acceso a Parking (Hoteles y Parques)\r\n + Traslado en autobús gratuito a los Parques Disney\r\n + WiFi gratis en tu Hotel\r\n\r\nImportante:\r\n• La tarifa de gestión y los impuestos locales están incluidos en el precio mostrado. Por favor, consulta los Términos y Condiciones de la reserva.",
+        "rooms": [
+          {
+            "room_name": "SUPERIOR FAMILY MX5",
+            "room_type": "HTLD1TRF5",
+            "room_type_handle": "DDL_RSTDDL40O_HTLD1TRF5",
+            "room_type_category": "STAND",
+            "base_room_price": 499635,
+            "room_price": 505535,
+            "delta_price": 0,
+            "eligible_sell_online": true,
+            "candidate_offer_identifier": 3
+          },
+          {
+            "room_name": "SUPERIOR FAMILY TERRACE MX5",
+            "room_type": "HTLD1TFT5",
+            "room_type_handle": "DDL_RSTDDL40O_HTLD1TFT5",
+            "room_type_category": "STAND",
+            "base_room_price": 529632,
+            "room_price": 535532,
+            "delta_price": 29997,
+            "eligible_sell_online": true,
+            "candidate_offer_identifier": 4
+          }
+        ],
+        "assumptive_add_ons": [
+          {
+            "addon_code": "TAXDDL4P0",
+            "addon_description": "Impuestos locales",
+            "addon_price": 3000
+          },
+          {
+            "addon_code": "FEEBKG4P0",
+            "addon_description": "Gastos de gestión",
+            "addon_price": 2900
+          }
+        ]
+      }
+    },
+    {
+      "hotel_code": "DNYH",
+      "eligibility": false,
+      "non_eligibility_reason": 1,
+      "hotel_name": "Disney’s Hotel New York",
+      "hotel_rating": "4KEY",
+      "hotel_category": "PWebDisneyTier",
+      "check_in_dates": [
+        {
+          "check_in_start_date": "20200214",
+          "check_in_end_date": "20210930",
+          "check_in_day_of_week": "MTWRFSU"
+        }
+      ],
+      "max_party_mix": 4,
+      "special_request": [
+        {
+          "request_code": "AR",
+          "request_description": "Habitaciones contiguas"
+        },
+        {
+          "request_code": "BT",
+          "request_description": "baño"
+        },
+        {
+          "request_code": "CB",
+          "request_description": "Cuna "
+        },
+        {
+          "request_code": "CR",
+          "request_description": "Habitaciones comunicantes "
+        },
+        {
+          "request_code": "FP",
+          "request_description": "Almohada de espuma "
+        },
+        {
+          "request_code": "HF",
+          "request_description": "Planta alta"
+        },
+        {
+          "request_code": "LA",
+          "request_description": "Llegada tardía"
+        },
+        {
+          "request_code": "LF",
+          "request_description": "Planta baja "
+        },
+        {
+          "request_code": "MR",
+          "request_description": "Petición de habitación comunicada"
+        },
+        {
+          "request_code": "NL",
+          "request_description": "Cerca del ascensor "
+        },
+        {
+          "request_code": "QR",
+          "request_description": "Habitación tranquila  "
+        },
+        {
+          "request_code": "SH",
+          "request_description": "ducha"
+        }
+      ],
+      "recommended_package": {
+        "room_package_code": "RSTDNY4C0DRAUUP",
+        "package_description": "Incluye: Estancia en Hotel Disney + Entradas a los 2 Parques Disney",
+        "offer_type": "Alt2",
+        "check_in_date": "20200818",
+        "check_out_date": "20200822",
+        "availability_for_stay_date": true,
+        "stay_length": 4,
+        "number_park_days": 5,
+        "offer_code": "C0",
+        "base_price_default_room": 798175,
+        "price_default_room": 803379,
+        "currency_code": "EUR",
+        "price_details": " + Habitación\r\n + Entradas a los Parques Disney\r\n + Acceso a todas las atracciones y espectáculos\r\n + Encuentros con Personajes Disney en tu Hotel y en los Parques\r\n + Extra Magic Time\r\n + Acceso a Parking (Hoteles y Parques)\r\n + Traslado en autobús gratuito a los Parques Disney\r\n + WiFi gratis en tu Hotel\r\n\r\nImportante:\r\n• El precio del desayuno no está incluido si no has reservado una suite o una habitación en el Castle Club, Empire State Club, Compass Club o Golden Forest Club. No olvides reservar el desayuno!\r\n• La tarifa de gestión y los impuestos locales están incluidos en el precio mostrado. Por favor, consulta los Términos y Condiciones de la reserva.",
+        "rooms": [
+          {
+            "room_name": "SUITE SPIDER MAN 1 ROOM MX5",
+            "room_type": "HTLD2USPO",
+            "room_type_handle": "DNY_RSTDNY4C0_HTLD2USPO",
+            "room_type_category": "",
+            "base_room_price": 798175,
+            "room_price": 803379,
+            "delta_price": 0,
+            "eligible_sell_online": false,
+            "candidate_offer_identifier": 5
+          },
+          {
+            "room_name": "SUITE SPIDER MAN 2 ROOMS MX5",
+            "room_type": "HTLD2USP5",
+            "room_type_handle": "DNY_RSTDNY4C0_HTLD2USP5",
+            "room_type_category": "",
+            "base_room_price": 798175,
+            "room_price": 803379,
+            "delta_price": 0,
+            "eligible_sell_online": false,
+            "candidate_offer_identifier": 6
+          },
+          {
+            "room_name": "SUITE AVENGERS MX6",
+            "room_type": "HTLD2UAV6",
+            "room_type_handle": "DNY_RSTDNY4C0_HTLD2UAV6",
+            "room_type_category": "",
+            "base_room_price": 798175,
+            "room_price": 803379,
+            "delta_price": 0,
+            "eligible_sell_online": false,
+            "candidate_offer_identifier": 7
+          },
+          {
+            "room_name": "SUPERIEUR FAMILY MX6",
+            "room_type": "HTLD2URF6",
+            "room_type_handle": "DNY_RSTDNY4C0_HTLD2URF6",
+            "room_type_category": "STAND",
+            "base_room_price": 447775,
+            "room_price": 452979,
+            "delta_price": -350400,
+            "eligible_sell_online": true,
+            "candidate_offer_identifier": 8
+          },
+          {
+            "room_name": "THE ART OF MARVEL PRESIDENTIAL SUITE",
+            "room_type": "HTLD2USP1",
+            "room_type_handle": "DNY_RSTDNY4C0_HTLD2USP1",
+            "room_type_category": "",
+            "base_room_price": 1415767,
+            "room_price": 1420971,
+            "delta_price": 617592,
+            "eligible_sell_online": false,
+            "candidate_offer_identifier": 9
+          }
+        ],
+        "assumptive_add_ons": [
+          {
+            "addon_code": "TAXDNY4P0",
+            "addon_description": "Impuestos locales",
+            "addon_price": 2304
+          },
+          {
+            "addon_code": "FEEBKG4P0",
+            "addon_description": "Gastos de gestión",
+            "addon_price": 2900
+          }
+        ]
+      }
+    },
+    {
+      "hotel_code": "DNBH",
+      "eligibility": true,
+      "hotel_name": "Disney’s Newport Bay Club",
+      "hotel_rating": "4KEY",
+      "hotel_category": "PWebDisneyTier",
+      "check_in_dates": [
+        {
+          "check_in_start_date": "20200216",
+          "check_in_end_date": "20210930",
+          "check_in_day_of_week": "MTWRFSU",
+          "min_los": 1,
+          "max_los": 14
+        }
+      ],
+      "btl_before_switch": 1,
+      "btl_switch_hour": "12",
+      "btl_after_switch": 2,
+      "max_party_mix": 6,
+      "max_infants": 1,
+      "min_los": 1,
+      "max_los": 14,
+      "special_request": [
+        {
+          "request_code": "AR",
+          "request_description": "Habitaciones contiguas"
+        },
+        {
+          "request_code": "CB",
+          "request_description": "Cuna "
+        },
+        {
+          "request_code": "CR",
+          "request_description": "Habitaciones comunicantes "
+        },
+        {
+          "request_code": "FP",
+          "request_description": "Almohada de espuma "
+        },
+        {
+          "request_code": "HF",
+          "request_description": "Planta alta"
+        },
+        {
+          "request_code": "LA",
+          "request_description": "Llegada tardía"
+        },
+        {
+          "request_code": "LF",
+          "request_description": "Planta baja "
+        },
+        {
+          "request_code": "MR",
+          "request_description": "Petición de habitación comunicada"
+        },
+        {
+          "request_code": "NL",
+          "request_description": "Cerca del ascensor "
+        },
+        {
+          "request_code": "QR",
+          "request_description": "Habitación tranquila  "
+        }
+      ],
+      "recommended_package": {
+        "room_package_code": "RSTDNB40KEGYH0H",
+        "package_description": "Incluye: 5% Descuento en Hotel Disney + Media Pensión Gratis + Entradas a los 2 Parques Disney",
+        "offer_type": "Alt3",
+        "check_in_date": "20200818",
+        "check_out_date": "20200822",
+        "first_booking_validity_date": "20191030",
+        "last_booking_validity_date": "20200325",
+        "availability_for_stay_date": true,
+        "stay_length": 4,
+        "number_park_days": 5,
+        "offer_code": "0K",
+        "base_price_default_room": 353945,
+        "price_default_room": 359149,
+        "currency_code": "EUR",
+        "price_details": " + Habitación\r\n + Entradas a los Parques Disney\r\n + Desayuno, comidas o cenas\r\n + Acceso a todas las atracciones y espectáculos\r\n + Encuentros con Personajes Disney en tu Hotel y en los Parques\r\n + Extra Magic Time\r\n + Acceso a Parking (Hoteles y Parques)\r\n + Traslado en autobús gratuito a los Parques Disney\r\n + WiFi gratis en tu Hotel\r\n\r\nImportante:\r\n• La tarifa de gestión y los impuestos locales están incluidos en el precio mostrado. Por favor, consulta los Términos y Condiciones de la reserva.",
+        "rooms": [
+          {
+            "room_name": "SUPERIOR FAMILY MX5",
+            "room_type": "HTLD3TRF5",
+            "room_type_handle": "DNB_RSTDNB40K_HTLD3TRF5",
+            "room_type_category": "STAND",
+            "base_room_price": 353945,
+            "room_price": 359149,
+            "delta_price": 0,
+            "eligible_sell_online": true,
+            "candidate_offer_identifier": 10
+          },
+          {
+            "room_name": "SUPERIOR FAMILY LAKE MX5",
+            "room_type": "HTLD3TLF5",
+            "room_type_handle": "DNB_RSTDNB40K_HTLD3TLF5",
+            "room_type_category": "STAND",
+            "base_room_price": 372950,
+            "room_price": 378154,
+            "delta_price": 19005,
+            "eligible_sell_online": true,
+            "candidate_offer_identifier": 11
+          },
+          {
+            "room_name": "COMPASS CLUB FAMILY MX5",
+            "room_type": "HTLD3URO5",
+            "room_type_handle": "DNB_RSTDNB40K_HTLD3URO5",
+            "room_type_category": "EXEC",
+            "base_room_price": 441350,
+            "room_price": 446554,
+            "delta_price": 87405,
+            "eligible_sell_online": true,
+            "candidate_offer_identifier": 12
+          },
+          {
+            "room_name": "COMPASS CLUB FAMILY MX6",
+            "room_type": "HTLD3URO6",
+            "room_type_handle": "DNB_RSTDNB40K_HTLD3URO6",
+            "room_type_category": "EXEC",
+            "base_room_price": 441350,
+            "room_price": 446554,
+            "delta_price": 87405,
+            "eligible_sell_online": true,
+            "candidate_offer_identifier": 13
+          }
+        ],
+        "assumptive_add_ons": [
+          {
+            "addon_code": "TAXDNB4P0",
+            "addon_description": "Impuestos locales",
+            "addon_price": 2304
+          },
+          {
+            "addon_code": "FEEBKG4P0",
+            "addon_description": "Gastos de gestión",
+            "addon_price": 2900
+          }
+        ]
+      }
+    },
+    {
+      "hotel_code": "DSLH",
+      "eligibility": false,
+      "non_eligibility_reason": 1,
+      "hotel_name": "Disney’s Sequoia Lodge",
+      "hotel_rating": "3KEY",
+      "hotel_category": "PWebDisneyTier",
+      "check_in_dates": [
+        {
+          "check_in_start_date": "20200214",
+          "check_in_end_date": "20210930",
+          "check_in_day_of_week": "MTWRFSU"
+        }
+      ],
+      "max_party_mix": 4,
+      "special_request": [
+        {
+          "request_code": "AR",
+          "request_description": "Habitaciones contiguas"
+        },
+        {
+          "request_code": "CB",
+          "request_description": "Cuna "
+        },
+        {
+          "request_code": "CR",
+          "request_description": "Habitaciones comunicantes "
+        },
+        {
+          "request_code": "FP",
+          "request_description": "Almohada de espuma "
+        },
+        {
+          "request_code": "HF",
+          "request_description": "Planta alta"
+        },
+        {
+          "request_code": "LA",
+          "request_description": "Llegada tardía"
+        },
+        {
+          "request_code": "LF",
+          "request_description": "Planta baja "
+        },
+        {
+          "request_code": "MR",
+          "request_description": "Petición de habitación comunicada"
+        },
+        {
+          "request_code": "NL",
+          "request_description": "Cerca del ascensor "
+        },
+        {
+          "request_code": "QR",
+          "request_description": "Habitación tranquila  "
+        }
+      ],
+      "recommended_package": {
+        "room_package_code": "RSTDSL40OEGYH0H",
+        "package_description": "Incluye: 25% Descuento en Hotel Disney + Media Pensión Gratis + Entradas a los 2 Parques Disney",
+        "offer_type": "Alt4",
+        "check_in_date": "20200818",
+        "check_out_date": "20200822",
+        "first_booking_validity_date": "20191030",
+        "last_booking_validity_date": "20200325",
+        "availability_for_stay_date": true,
+        "stay_length": 4,
+        "number_park_days": 5,
+        "offer_code": "0O",
+        "base_price_default_room": 247635,
+        "price_default_room": 252039,
+        "currency_code": "EUR",
+        "price_details": " + Habitación\r\n + Entradas a los Parques Disney\r\n + Desayuno, comidas o cenas\r\n + Acceso a todas las atracciones y espectáculos\r\n + Encuentros con Personajes Disney en tu Hotel y en los Parques\r\n + Extra Magic Time\r\n + Acceso a Parking (Hoteles y Parques)\r\n + Traslado en autobús gratuito a los Parques Disney\r\n + WiFi gratis en tu Hotel\r\n\r\nImportante:\r\n• La tarifa de gestión y los impuestos locales están incluidos en el precio mostrado. Por favor, consulta los Términos y Condiciones de la reserva.",
+        "rooms": [
+          {
+            "room_name": "STANDARD FACILITIES MX6 ACC",
+            "room_type": "HTLD4TPH6",
+            "room_type_handle": "DSL_RSTDSL40O_HTLD4TPH6",
+            "room_type_category": "",
+            "base_room_price": 247635,
+            "room_price": 252039,
+            "delta_price": 0,
+            "eligible_sell_online": false,
+            "candidate_offer_identifier": 14
+          }
+        ],
+        "assumptive_add_ons": [
+          {
+            "addon_code": "TAXDSL4P0",
+            "addon_description": "Impuestos locales",
+            "addon_price": 1504
+          },
+          {
+            "addon_code": "FEEBKG4P0",
+            "addon_description": "Gastos de gestión",
+            "addon_price": 2900
+          }
+        ]
+      }
+    },
+    {
+      "hotel_code": "DCHH",
+      "eligibility": false,
+      "non_eligibility_reason": 1,
+      "hotel_name": "Disney’s Hotel Cheyenne",
+      "hotel_rating": "2KEY",
+      "hotel_category": "PWebDisneyTier",
+      "check_in_dates": [
+        {
+          "check_in_start_date": "20200214",
+          "check_in_end_date": "20210930",
+          "check_in_day_of_week": "MTWRFSU"
+        }
+      ],
+      "max_party_mix": 4,
+      "special_request": [
+        {
+          "request_code": "AR",
+          "request_description": "Habitaciones contiguas"
+        },
+        {
+          "request_code": "CB",
+          "request_description": "Cuna "
+        },
+        {
+          "request_code": "CR",
+          "request_description": "Habitaciones comunicantes "
+        },
+        {
+          "request_code": "FP",
+          "request_description": "Almohada de espuma "
+        },
+        {
+          "request_code": "LA",
+          "request_description": "Llegada tardía"
+        },
+        {
+          "request_code": "MR",
+          "request_description": "Petición de habitación comunicada"
+        },
+        {
+          "request_code": "QR",
+          "request_description": "Habitación tranquila  "
+        }
+      ],
+      "recommended_package": {
+        "room_package_code": "RSTDCH40OEGYH0H",
+        "package_description": "Incluye: 25% Descuento en Hotel Disney + Media Pensión Gratis + Entradas a los 2 Parques Disney",
+        "offer_type": "Alt5",
+        "check_in_date": "20200818",
+        "check_out_date": "20200822",
+        "first_booking_validity_date": "20200131",
+        "last_booking_validity_date": "20200325",
+        "availability_for_stay_date": true,
+        "stay_length": 4,
+        "number_park_days": 5,
+        "offer_code": "0O",
+        "base_price_default_room": 220635,
+        "price_default_room": 224439,
+        "currency_code": "EUR",
+        "price_details": " + Habitación\r\n + Entradas a los Parques Disney\r\n + Desayuno, comidas o cenas\r\n + Acceso a todas las atracciones y espectáculos\r\n + Encuentros con Personajes Disney en tu Hotel y en los Parques\r\n + Extra Magic Time\r\n + Acceso a Parking (Hoteles y Parques)\r\n + Traslado en autobús gratuito a los Parques Disney\r\n + WiFi gratis en tu Hotel\r\n\r\nImportante:\r\n• La tarifa de gestión y los impuestos locales están incluidos en el precio mostrado. Por favor, consulta los Términos y Condiciones de la reserva.",
+        "rooms": [
+          {
+            "room_name": "WOODY STANDARD MX6 DB/TR ACC",
+            "room_type": "HTLD5TGH6",
+            "room_type_handle": "DCH_RSTDCH40O_HTLD5TGH6",
+            "room_type_category": "",
+            "base_room_price": 220635,
+            "room_price": 224439,
+            "delta_price": 0,
+            "eligible_sell_online": false,
+            "candidate_offer_identifier": 15
+          },
+          {
+            "room_name": "WOODY STANDARD FACILITIES MX6 DB/TR ACC",
+            "room_type": "HTLD5TDH6",
+            "room_type_handle": "DCH_RSTDCH40O_HTLD5TDH6",
+            "room_type_category": "",
+            "base_room_price": 226629,
+            "room_price": 230433,
+            "delta_price": 5994,
+            "eligible_sell_online": false,
+            "candidate_offer_identifier": 16
+          }
+        ],
+        "assumptive_add_ons": [
+          {
+            "addon_code": "TAXDCH4P0",
+            "addon_description": "Impuestos locales",
+            "addon_price": 904
+          },
+          {
+            "addon_code": "FEEBKG4P0",
+            "addon_description": "Gastos de gestión",
+            "addon_price": 2900
+          }
+        ]
+      }
+    },
+    {
+      "hotel_code": "DDCH",
+      "eligibility": true,
+      "hotel_name": "Disney’s Davy Crockett Ranch",
+      "hotel_rating": "0KEY",
+      "hotel_category": "PWebDisneyTier",
+      "check_in_dates": [
+        {
+          "check_in_start_date": "20200216",
+          "check_in_end_date": "20210930",
+          "check_in_day_of_week": "MTWRFSU",
+          "min_los": 1,
+          "max_los": 14
+        }
+      ],
+      "btl_before_switch": 1,
+      "btl_switch_hour": "12",
+      "btl_after_switch": 2,
+      "max_party_mix": 6,
+      "max_infants": 2,
+      "min_los": 1,
+      "max_los": 14,
+      "special_request": [
+        {
+          "request_code": "CB",
+          "request_description": "Cuna "
+        },
+        {
+          "request_code": "FP",
+          "request_description": "Almohada de espuma "
+        },
+        {
+          "request_code": "LA",
+          "request_description": "Llegada tardía"
+        },
+        {
+          "request_code": "MR",
+          "request_description": "Petición de habitación comunicada"
+        }
+      ],
+      "recommended_package": {
+        "room_package_code": "RSTDDC40NEGYH0H",
+        "package_description": "Incluye: 20% Descuento en Hotel Disney + Media Pensión Gratis + Entradas a los 2 Parques Disney",
+        "offer_type": "Alt6",
+        "check_in_date": "20200818",
+        "check_out_date": "20200822",
+        "first_booking_validity_date": "20200113",
+        "last_booking_validity_date": "20200325",
+        "availability_for_stay_date": true,
+        "stay_length": 4,
+        "number_park_days": 5,
+        "offer_code": "0N",
+        "base_price_default_room": 230213,
+        "price_default_room": 233913,
+        "currency_code": "EUR",
+        "price_details": " + Habitación\r\n + Entradas a los Parques Disney\r\n + Desayuno, comidas o cenas\r\n + Acceso a todas las atracciones y espectáculos\r\n + Encuentros con Personajes Disney en los Parques\r\n + Extra Magic Time\r\n + Acceso a Parking (Hoteles y Parques)\r\n + WiFi gratis en tu Hotel\r\n\r\nImportante:\r\n• Uso coche propio: Servicio de autobús no disponible.\r\n• La tarifa de gestión y los impuestos locales están incluidos en el precio mostrado. Por favor, consulta los Términos y Condiciones de la reserva.",
+        "rooms": [
+          {
+            "room_name": "PIONEER CABIN MX6",
+            "room_type": "HTLD7TRP6",
+            "room_type_handle": "DDC_RSTDDC40N_HTLD7TRP6",
+            "room_type_category": "STAND",
+            "base_room_price": 230213,
+            "room_price": 233913,
+            "delta_price": 0,
+            "eligible_sell_online": true,
+            "candidate_offer_identifier": 17
+          },
+          {
+            "room_name": "PIONEER CABIN MX5 ACC",
+            "room_type": "HTLD7TPA5",
+            "room_type_handle": "DDC_RSTDDC40N_HTLD7TPA5",
+            "room_type_category": "",
+            "base_room_price": 230213,
+            "room_price": 233913,
+            "delta_price": 0,
+            "eligible_sell_online": false,
+            "candidate_offer_identifier": 18
+          },
+          {
+            "room_name": "PREMIUM CABIN MX6",
+            "room_type": "HTLD7TPL6",
+            "room_type_handle": "DDC_RSTDDC40N_HTLD7TPL6",
+            "room_type_category": "STAND",
+            "base_room_price": 239813,
+            "room_price": 243513,
+            "delta_price": 9600,
+            "eligible_sell_online": true,
+            "candidate_offer_identifier": 19
+          },
+          {
+            "room_name": "PREMIUM CABIN MX5 ACC",
+            "room_type": "HTLD7TPH5",
+            "room_type_handle": "DDC_RSTDDC40N_HTLD7TPH5",
+            "room_type_category": "",
+            "base_room_price": 239813,
+            "room_price": 243513,
+            "delta_price": 9600,
+            "eligible_sell_online": false,
+            "candidate_offer_identifier": 20
+          }
+        ],
+        "assumptive_add_ons": [
+          {
+            "addon_code": "TAXDDC4P0",
+            "addon_description": "Impuestos locales",
+            "addon_price": 800
+          },
+          {
+            "addon_code": "FEEBKG4P0",
+            "addon_description": "Gastos de gestión",
+            "addon_price": 2900
+          }
+        ]
+      }
+    },
+    {
+      "hotel_code": "VVNP",
+      "eligibility": true,
+      "hotel_name": "Villages Nature Paris",
+      "hotel_rating": "4KEY",
+      "hotel_category": "PWebDisneyTier",
+      "check_in_dates": [
+        {
+          "check_in_start_date": "20200218",
+          "check_in_end_date": "20210930",
+          "check_in_day_of_week": "MTWRFSU",
+          "min_los": 1,
+          "max_los": 7
+        }
+      ],
+      "btl_before_switch": 3,
+      "btl_switch_hour": "12",
+      "btl_after_switch": 4,
+      "max_party_mix": 6,
+      "max_infants": 1,
+      "min_los": 1,
+      "max_los": 7,
+      "special_request": [
+        {
+          "request_code": "AR",
+          "request_description": "Habitaciones contiguas"
+        },
+        {
+          "request_code": "CB",
+          "request_description": "Cuna"
+        },
+        {
+          "request_code": "CR",
+          "request_description": "Habitaciones comunicantes"
+        },
+        {
+          "request_code": "FP",
+          "request_description": "Almohada de espuma"
+        },
+        {
+          "request_code": "HF",
+          "request_description": "Planta alta"
+        },
+        {
+          "request_code": "LA",
+          "request_description": "Llegada tardía"
+        },
+        {
+          "request_code": "LF",
+          "request_description": "Planta baja"
+        },
+        {
+          "request_code": "MR",
+          "request_description": "Petición de habitación comunicada"
+        },
+        {
+          "request_code": "NL",
+          "request_description": "Cerca del ascensor"
+        },
+        {
+          "request_code": "QR",
+          "request_description": "Habitación tranquila"
+        },
+        {
+          "request_code": "WA",
+          "request_description": "Con mascotas (cargo adicional a pagar en la llegada)"
+        }
+      ],
+      "recommended_package": {
+        "room_package_code": "RSTDVN47LEGYH0H",
+        "package_description": "Incluye: 25% Descuento en Village Nature Paris + 2 días de Media Pensión Gratis en Disneyland Paris + 2 Días de Entradas a los 2 Parques Disney",
+        "offer_type": "Alt7",
+        "check_in_date": "20200818",
+        "check_out_date": "20200822",
+        "first_booking_validity_date": "20191030",
+        "last_booking_validity_date": "20200325",
+        "availability_for_stay_date": true,
+        "stay_length": 4,
+        "number_park_days": 2,
+        "offer_code": "7L",
+        "base_price_default_room": 228970,
+        "price_default_room": 234174,
+        "currency_code": "EUR",
+        "price_details": " + Habitación  y acceso ilimitado a Villages Natures Paris y sus 5 mundos inmersivos para cada día de tu estancia\r\n + Entradas de 2 días a los Parques Disney \r\n + 2 comidas gratis por día durante los 2 días de tu visita a los Parques Disney: 1 cupón para el desayuno en uno de los restaurantes de servicio de mostrador ubicados en los Parques Disney + 1 cupón de comida por persona y por día válido para el almuerzo O la cena en un gran número de restaurantes en los parques de Disney, Hoteles Disney y Disney Village. Tu paquete incluye la opción PLUS\r\n + Acceso a todas las atracciones y espectáculos\r\n + Encuentros con Personajes Disney en los Parques\r\n + Extra Magic Time en los Parques Disney\r\n + Acceso a Parking (Villages Nature Paris y Parques)\r\n + WiFi gratis en tu Hotel\r\n\r\nImportante:\r\n• El precio del desayuno no está incluido.\r\n• Servicio público de autobuses (de pago) de Villages Nature Paris a los Parques Disney y la estacione Marne-la-Vallée-Chessy.\r\n• La tarifa de gestión y los impuestos locales están incluidos en el precio mostrado. Por favor, consulta los Términos y Condiciones de la reserva.",
+        "rooms": [
+          {
+            "room_name": "COCOON APARTMENT MX5",
+            "room_type": "HTLD8BAL5",
+            "room_type_handle": "VVN_RSTDVN47L_HTLD8BAL5",
+            "room_type_category": "STAND",
+            "base_room_price": 228970,
+            "room_price": 234174,
+            "delta_price": 0,
+            "eligible_sell_online": true,
+            "candidate_offer_identifier": 21
+          }
+        ],
+        "assumptive_add_ons": [
+          {
+            "addon_code": "TAXDVN4P0",
+            "addon_description": "Impuestos locales",
+            "addon_price": 2304
+          },
+          {
+            "addon_code": "FEEBKG4P0",
+            "addon_description": "Gastos de gestión",
+            "addon_price": 2900
+          }
+        ]
+      }
+    }
+  ],
+  "party_mix": [
+    {
+      "number_adults": 2,
+      "date_birth_child": [
+        "20071107",
+        "20110304",
+        "20150404"
+      ],
+      "date_birth_infant": []
+    }
+  ],
+  "recommender_session_id": "446666782"
+}

@@ -8,9 +8,7 @@
         <title>Superheroes de Marvel</title>
       </head>
       <body>
-      	<h1><xsl:value-of select="nombre"/></h1>
-      	<h1><xsl:value-of select="poderes"/></h1>
-      	<h1><xsl:value-of select="amigos"/></h1>
+      	<xsl:apply-templates/>
       </body>
     </html>
   </xsl:template>

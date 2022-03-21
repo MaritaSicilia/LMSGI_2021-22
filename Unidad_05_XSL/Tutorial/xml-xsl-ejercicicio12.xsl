@@ -10,47 +10,39 @@
       <body>
         <h1>Superhéroes de Marvel</h1>
         <xsl:for-each select="superheroe">
-            <xsl:choose>
-              <xsl:when test="@nombre = 'Thor'">
-                <xsl:call-template name="muestraTablaSuperheroe">
-                  <xsl:with-param name="color" select="'#FF0000'"/>
-                  <xsl:with-param name="imagen" select="'../image/Thor.jpg'"></xsl:with-param>
-                </xsl:call-template>
-              </xsl:when>
-              <xsl:when test="@nombre = 'Hulk'">
-                <xsl:call-template name="muestraTablaSuperheroe">
-                  <xsl:with-param name="color" select="'#00FF00'"/>
-                  <xsl:with-param name="imagen" select="'../image/hulk.jpg'"></xsl:with-param>
-                </xsl:call-template>
-              </xsl:when>
-              <xsl:when test="@nombre = 'Iron Man'">
-                <xsl:call-template name="muestraTablaSuperheroe">
-                  <xsl:with-param name="color" select="'#0000FF'"/>
-                  <xsl:with-param name="imagen" select="'../image/iron-man.jpg'"></xsl:with-param>
-                </xsl:call-template>
-              </xsl:when>
-              <xsl:otherwise>
-                <xsl:call-template name="muestraTablaSuperheroe">
-                  <xsl:with-param name="color" select="'#CCCCCC'"/>
-                  <xsl:with-param name="imagen" select="'../image/marvel.jpg'"></xsl:with-param>
-                </xsl:call-template>
-              </xsl:otherwise>
-            </xsl:choose>
-          <br/>
+          <xsl:call-template name="tablaSuperheroe">
+            <xsl:with-param name="numeroFila" select="position()"/>
+            <xsl:with-param name="srcImagen" select="'../image/Thor.jpg'"/>
+          </xsl:call-template>
         </xsl:for-each>
       </body>
     </html>
   </xsl:template>
 
 
-  
-  <xsl:template name="muestraTablaSuperheroe">
+ 
+  <xsl:template name="tablaSuperheroe">
+    <xsl:param name="numeroFila"/>
+    <xsl:param name="srcImagen"/>
+    <div>
+      <xsl:attribute name="style">background:
+        <xsl:choose>
+          <xsl:when test="$numeroFila mod 2 = 1">red;</xsl:when>
+          <xsl:otherwise>green;</xsl:otherwise>
+        </xsl:choose>
+      </xsl:attribute>
+      <h2><xsl:value-of select="concat($numeroFila,'-',@nombre)"/></h2>
+      <img src="{$srcImagen}"/>
+    </div>
+    <br/>
+  </xsl:template>
+
+<!--  <xsl:template name="muestraTablaSuperheroe">
     <xsl:param name="color"/>
     <xsl:param name="imagen"/>
 
- 
     <div>
-      <xsl:attribute name="style">width:400px; background:
+     <xsl:attribute name="style">width:400px; background:
         <xsl:choose>
           <xsl:when test="contains(@nombre, 'a')">
             <xsl:value-of select="$color"/>;
@@ -64,7 +56,7 @@
         <xsl:value-of select="@nombre"/> - Color <xsl:value-of select="$color"/>
       </h2>
     </div>
-    
+    -->
 <!--    <div style="width: 400px; background:{$color}; position: left;">
       <table>
         <tr class="tituloTabla">
@@ -82,8 +74,8 @@
           <td><xsl:value-of select="concat('Amigos: ', @amigos)"/></td>
         </tr>
       </table>
-    </div> -->
-  </xsl:template>
+    </div> 
+  </xsl:template> -->
 
 
   <xsl:template name="css">
@@ -99,7 +91,7 @@
       }    
       
       img {
-      width: 200px;	
+      width: 50px;	
       }
       
       .tituloTabla {

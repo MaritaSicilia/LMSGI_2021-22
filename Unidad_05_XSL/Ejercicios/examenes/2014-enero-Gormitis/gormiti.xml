@@ -7,10 +7,10 @@
     <gormiti tribu="bosque">http://webdidacticarafaelmunoz.appspot.com/lmsgi/ejercicios-cap5/examen/2014-enero/gormitis/bosque.png</gormiti>
     <gormiti tribu="montana">http://webdidacticarafaelmunoz.appspot.com/lmsgi/ejercicios-cap5/examen/2014-enero/gormitis/montana.jpg</gormiti>
     <tablero url="http://webdidacticarafaelmunoz.appspot.com/lmsgi/ejercicios-cap5/examen/2014-enero/gormitis/islagorm.jpg">
-      <gormitiEnMapa x="3" y="2" tribu="volcan"/>
-      <gormitiEnMapa x="2" y="3" tribu="agua"/>
-      <gormitiEnMapa x="2" y="1" tribu="aire"/>
-      <gormitiEnMapa x="1" y="2" tribu="bosque"/>
-      <gormitiEnMapa x="3" y="3" tribu="montana"/>
+      <gormitiEnMapa x="2" y="1" tribu="volcan"/>
+      <gormitiEnMapa x="1" y="2" tribu="agua"/>
+      <gormitiEnMapa x="1" y="0" tribu="aire"/>
+      <gormitiEnMapa x="0" y="1" tribu="bosque"/>
+      <gormitiEnMapa x="2" y="2" tribu="montana"/>
   </tablero>
 </gormitis>

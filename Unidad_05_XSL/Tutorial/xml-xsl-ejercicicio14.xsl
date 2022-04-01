@@ -43,8 +43,8 @@
   	<xsl:param name="j"/> 
   	<xsl:if test="$j &lt;= 8">
   		<xsl:call-template name="celda">
-  			<xsl:with-param name="x"><xsl:value-of select="$i"/></xsl:with-param>
-  			<xsl:with-param name="y"><xsl:value-of select="$j"/></xsl:with-param>
+  			<xsl:with-param name="x"><xsl:value-of select="$j"/></xsl:with-param>
+  			<xsl:with-param name="y"><xsl:value-of select="$i"/></xsl:with-param>
   		</xsl:call-template>
   		<xsl:call-template name="bucleForColumna">
   			<xsl:with-param name="i"><xsl:value-of select="$i"/></xsl:with-param>

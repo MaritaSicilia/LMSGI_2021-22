@@ -18,8 +18,6 @@
   </xsl:template>
 
 
-
-
   <xsl:template name="bucleForClasico">
   	<xsl:param name="i"/>
   	<xsl:if test="$i &lt; 10">

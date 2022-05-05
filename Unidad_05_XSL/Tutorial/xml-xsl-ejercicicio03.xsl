@@ -5,7 +5,7 @@
     <html>
       <head>
         <title>Superheroes</title>
-      </head>
+
       <style type="text/css">
         body {
           margin: 50px;
@@ -22,6 +22,7 @@
           text-align: center;
         }
       </style>
+      </head>
       <body>
         <xsl:apply-templates/>
       </body>

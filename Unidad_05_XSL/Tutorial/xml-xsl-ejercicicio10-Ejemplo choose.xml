@@ -3,9 +3,9 @@
 
 <marvel>
   <superheroe nombre="Thor" poderes="Martillo mágico, Dios, Fuerza" amigos="Iron Man y Hulk" nivel="7"/>
-  <superheroe nombre="Hulk" poderes="Superfuerza, indestructible" amigos="Iron Man y Thor" nivel="8"/>
+  <superheroe nombre="Gamora" poderes="Superfuerza, indestructible" amigos="Iron Man y Thor" nivel="8"/>
   <superheroe nombre="Iron Man" poderes="Armadura, intelecto superior" amigos="Hulk y Thor" nivel="6"/>
   <superheroe nombre="Capitán América" poderes="fuerza, resistencia, superguerrero" amigos="Iron Man" nivel="5"/>
   <superheroe nombre="Viuda Negra" poderes="coordinación, luchadora" amigos="No tiene" nivel="6"/>
-  <superheroe nombre="Nick Furia" poderes="coordinación, luchadora" amigos="No tiene" nivel="6"/>
+  <superheroe nombre="Bruja escarlata" poderes="coordinación, luchadora" amigos="No tiene" nivel="6"/>
 </marvel>
